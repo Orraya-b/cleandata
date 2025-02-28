@@ -30,7 +30,7 @@ system_event_unique_only.to_csv("data_unique_only.csv", index=False)
 missing_VM = dataset[~dataset["Name"].isin(start_complete_event["Target"])]
 
 # แสดงผลลัพธ์
-# print(missing_VM)
+print(missing_VM)
 
 # บันทึกค่าที่แตกต่างกันระหว่าง 2 ไฟล์ไปยังไฟล์ใหม่
 missing_VM.to_csv("difference.csv", index=False)
